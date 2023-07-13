@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NFL Store</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link  rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+  <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAABzOQAAJhvdACce3QB8etcA3ez+AP367gD5+/wA9/j0AH0+CwD7/vwAcTkBAP3+/AAlH9sALSLKACUe3gB5OQEANCAAAPX58gD++foAJBnDAPXp3QCFdWEAbTUFAP77/QB5PgQA///6AG85AgD3+vgA//79AJqb5gBoQCEA+/z7ACAg2gAlIdcAtp+HAHE6AAB1OgAAcjkDACkg2gD+/v4Ap6XjAHM5AwBwOAYA+P35APz9+QD7/PwAcTcBAHE9CQBgMAUAdTcBACcg2wAcI9MA/v7/APj6+gD//v8AdzkEAPn9+gD6/foAGRzfAPz9+gD9+f0AJx7ZAP329QB0NwIAJyHZAGQ3CwByOgIAazIAAIF92wD6//UA+Pr7ACQvsgD///UAlZrkAHA4AABcWb4A/f37AHE4AAAmItcAczgAACUd3QB2OAAAcjsAACYd3QB0OwAA9v/2AHk4AAD+//4A+P/2AHQ6AwD/+/kA/P75APr39ABxOAEAJSLYAP75/wD4//8AdDgBAPL7+gBtNgcA/f//AP7//wD0/voAdzsBAP///wD+/PcAdD0EACEj1gD+/f0AcjcFAGwzAAB1OwIAKy26APz7+wA9PdcA/f77APr9/gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaGhoaGhoZSocaGhoaGhoaGhoaGgnNFE/LwtXJ2hoaGhoaGwqAGpoB1UqLio1aGhoaGweZmAoWj08LXASFmJoaGgnYUsDazhTdAlOR1FoaGhoC0JMRCA5UFsXQEVRaGhoaAsKTHJJOAxedCYLUWhoaGgLQjshHSsOX0Ymc1FoaGhoCyU6DQETAjMEMixRaGhoaAspUVFRUVFRUVFRUWhoaGgLD1xWLWhxVAoUXRVoaGhoC0pjT20fG3QaWSNRaGhoaAtvPjcRQVgGCAUwGWhoaGgLUhhuMQoiECVnQ01oaGhoaCdkJzQZJE1saCdoJ2hoaGhoaGhoNkhpaGhoaGhoaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" rel="icon" type="image/x-icon" />
+  <!-- 
+    -  css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  
+  <link rel="preload" href="./assets/images/hero-banner.png" as="image">
+
+</head>
+
+<body id="top">
+
+ 
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="160" height="50" alt="Footcap logo">
+      </a>
+
+      <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.svg" width="190" height="50" alt="Footcap logo">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">NFL</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">FUTEBOL AMERICANO</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">SHOUDERS PADS</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">EQUIPAMENTOS</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">HELMETS</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">BOLAS</a>
+          </li>
+
+        </ul>
+
+        <ul class="nav-action-list">
+
+          <li>
+            <button class="nav-action-btn">
+              <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+
+              <span class="nav-action-text">Procurar</span>
+            </button>
+          </li>
+
+          <li>
+            <a href="#" class="nav-action-btn">
+              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+              <span class="nav-action-text">Login / Cadastrar</span>
+            </a>
+          </li>
+
+          <li>
+            <button class="nav-action-btn">
+              <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+
+              <span class="nav-action-text">Lista de Desejos</span>
+
+              <data class="nav-action-badge" value="5" aria-hidden="true">5</data>
+            </button>
+          </li>
+
+          <li>
+            <button class="nav-action-btn">
+              <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
+
+              <data class="nav-action-text" value="318.00">Basket: <strong>$318.00</strong></data>
+
+              <data class="nav-action-badge" value="4" aria-hidden="true">4</data>
+            </button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" style="background-image: url('./assets/images/hero-banner.png')">
+        <div class="container">
+
+          <h2 class="h1 hero-title">
+            Super Bowl LVII <strong>Coleção nova de Jerseys</strong>
+          </h2>
+
+          <p class="hero-text">
+
+            Experimente a excelência em equipamentos de futebol americano. 
+            Visite nossa loja hoje mesmo e alcance a grandeza no campo!          </p>
+
+          <button class="btn btn-primary">
+            <span>Comprar agora</span>
+
+            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #COLLECTION
+      -->
+
+      <section class="section collection">
+        <div class="container">
+
+          <ul class="collection-list has-scrollbar">
+
+            <li>
+              <div class="collection-card" style="background-image: url('./assets/images/collection-1.jpg')">
+                <h3 class="h4 card-title">Chuteiras</h3>
+
+                <a href="#" class="btn btn-secondary">
+                  <span>Ver tudo</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card" style="background-image: url('./assets/images/collection-2.jpg')">
+                <h3 class="h4 card-title">Jerseys</h3>
+
+                <a href="#" class="btn btn-secondary">
+                  <span>Ver tudo</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card" style="background-image: url('./assets/images/collection-3.jpg')">
+                <h3 class="h4 card-title">Equipamentos esportivos</h3>
+
+                <a href="#" class="btn btn-secondary">
+                  <span>Ver tudo</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PRODUCT
+      -->
+
+      <section class="section product">
+        <div class="container">
+
+          <h2 class="h2 section-title">Chuteiras mais vendidas</h2>
+
+          <ul class="filter-list">
+
+            <li>
+              <button class="filter-btn  active">Todos</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Nike</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Adidas</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Puma</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">under armour</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">penalty</button>
+            </li>
+
+          </ul>
+
+          <ul class="product-list">
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-1.jpg" width="312" height="350" loading="lazy"
+                    alt="Running Sneaker Shoes" class="image-contain">
+
+                  <div class="card-badge">New</div>
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Adicionar ao carrinho</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Adicionar a lista de desejos</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Olhada rápida</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-4">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-4">Comparar</div>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link">Masculino</a> /
+                    <a href="#" class="card-cat-link">Esportivo</a>
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Chuteira Adidas X SpeedFlow + FG Campo </a>
+                  </h3>
+
+                  <data class="card-price" value="419.90">R$419.90</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-2.jpg" width="312" height="350" loading="lazy"
+                    alt="Leather Mens Slipper" class="image-contain">
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Adicionar ao carrinho</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Adicionar a lista de desejos</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Olhada rápida</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-4">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-4">Comparar</div>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link">Masculino</a> /
+                    <a href="#" class="card-cat-link">Esportivo</a>
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">CHUTEIRA SEM CADARÇOS X SPEEDPORTAL.3 CAMPO</a>
+                  </h3>
+
+                  <data class="card-price" value="699,99">R$699,99</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-3.jpg" width="312" height="350" loading="lazy"
+                    alt="Simple Fabric Shoe" class="image-contain">
+
+                  <div class="card-badge">New</div>
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Adicionar ao carrinho</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Adicionar a lista de desejos</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Olhada rápida</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-4">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-4">Comparar</div>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link">Masculino</a> /
+                    <a href="#" class="card-cat-link">Esportivo</a>
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">CHUTEIRA PREDATOR EDGE CRYSTAL.1 CAMPO</a>
+                  </h3>
+
+                  <data class="card-price" value="1.799,99">R$1.799,99</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-4.jpg" width="312" height="350" loading="lazy"
+                    alt="Air Jordan 7 Retro " class="image-contain">
+
+                  <div class="card-badge"> -25%</div>
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Adicionar ao carrinho</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Adicionar a lista de desejos</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Olhada rápida</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-4">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-4">Comparar</div>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link">Masculino</a> /
+                    <a href="#" class="card-cat-link">Esportivo</a>
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">CHUTEIRA X SPEEDPORTAL.4 FXG</a>
+                  </h3>
+
+                  <data class="card-price" value="200.00">R$200.00 <del>$399,99</del></data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-5.jpg" width="312" height="350" loading="lazy"
+                    alt="Nike Air Max 270 SE" class="image-contain">
+
+                  <div class="card-badge">New</div>
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Adicionar ao carrinho</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Adicionar a lista de desejos</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Olhada rápida</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-4">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-4">Comparar</div>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link">Feminino</a> /
+                    <a href="#" class="card-cat-link">Esportivo</a>
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Chuteira Nike Zoom Mercurial Superfly 9 Academy Campo</a>
+                  </h3>
+
+                  <data class="card-price" value="499,99">R$499,99</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-6.jpg" width="312" height="350" loading="lazy"
+                    alt="Adidas Sneakers Shoes" class="image-contain">
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Adicionar ao carrinho</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Adicionar a lista de desejos</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Olhada rápida</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-4">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-4">Comparar</div>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link">Feminino</a> /
+                    <a href="#" class="card-cat-link">Esportivo</a>
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Chuteira Nike Zoom Mercurial Vapor 15 Academy Campo</a>
+                  </h3>
+
+                  <data class="card-price" value="699,99">R$699,99</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-7.jpg" width="312" height="350" loading="lazy"
+                    alt="Nike Basketball shoes" class="image-contain">
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Adicionar ao carrinho</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Adicionar a lista de desejos</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Olhada rápida</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-4">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-4">Comparar</div>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link">Feminino</a> /
+                    <a href="#" class="card-cat-link">Esportivo</a>
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Chuteira Nike Zoom Superfly 9 Elite XXV Campo</a>
+                  </h3>
+
+                  <data class="card-price" value="2499,99">R$2499,99</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/product-8.jpg" width="312" height="350" loading="lazy"
+                    alt="Simple Fabric Shoe" class="image-contain">
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Adicionar ao carrinho</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Adicionar a lista de desejos</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Olhada rápida</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-4">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-4">Comparar</div>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link">Feminino</a> /
+                    <a href="#" class="card-cat-link">Esportivo</a>
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Chuteira Nike Mercurial Vapor 15 Club Campo</a>
+                  </h3>
+
+                  <data class="card-price" value="379,99">R$379,99</data>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="section cta">
+        <div class="container">
+
+          <ul class="cta-list">
+
+            <li>
+              <div class="cta-card" style="background-image: url('./assets/images/cta-1.jpg')">
+                <p class="card-subtitle">Equipamentos</p>
+
+                <h3 class="h2 card-title">Nesta temporada Off 50%</h3>
+
+                <a href="#" class="btn btn-link">
+                  <span>Comprar agora</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="cta-card" style="background-image: url('./assets/images/cta-2.jpg')">
+                <p class="card-subtitle">Capacetes</p>
+
+                <h3 class="h2 card-title">Capacetes de proteção</h3>
+
+                <a href="#" class="btn btn-link">
+                  <span>Comprar agora</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SPECIAL
+      -->
+
+      <section class="section special">
+        <div class="container">
+
+          <div class="special-banner" style="background-image: url('./assets/images/special-banner.jpg')">
+            <h2 class="h3 banner-title">Novas Tendências</h2>
+
+            <a href="#" class="btn btn-link">
+              <span>Ver tudo</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+
+          <div class="special-product">
+
+            <h2 class="h2 section-title">
+              <span class="text">Equipamentos</span>
+
+              <span class="line"></span>
+            </h2>
+
+            <ul class="has-scrollbar">
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/images/61Ib32r1bZL._AC_SX425_.jpg" width="312" height="350" loading="lazy"
+                      alt="Running Sneaker Shoes" class="image-contain">
+
+                    <div class="card-badge">New</div>
+
+                    <ul class="card-action-list">
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-1">Adicionar ao carrinho</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-2">Adicionar lista de Desejos</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-3">
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-3">Olhada rápida</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-4">
+                          <ion-icon name="repeat-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-4">Comparar</div>
+                      </li>
+
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Protetor</a> /
+                      <a href="#" class="card-cat-link">Masculino</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Protetor bucal de futebol americano Battle Fangs</a>
+                    </h3>
+
+                    <data class="card-price" value="180.00">R$180.00</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/images/Shoulder_Pad_Riddell_Rival_1__84393_zoom.jpg" width="312" height="350" loading="lazy"
+                      alt="Leather Mens Slipper" class="image-contain">
+
+                    <ul class="card-action-list">
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-1">Adicionar ao carrinho</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-2">Adicionar lista de Desejos</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-3">
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-3">Olhada rápida</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-4">
+                          <ion-icon name="repeat-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-4">Comparar</div>
+                      </li>
+
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Protetor</a> /
+                      <a href="#" class="card-cat-link">Masculino</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Protetor de Ombro - Shoulder Pad Riddell - Rival - Adulto - All Purpose</a>
+                    </h3>
+
+                    <data class="card-price" value="899,90">R$899,90</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/images/272540.webp" width="312" height="350" loading="lazy"
+                      alt="Simple Fabric Shoe" class="image-contain">
+
+                    <div class="card-badge">New</div>
+
+                    <ul class="card-action-list">
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-1">Adicionar ao carrinho</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-2">Adicionar lista de Desejos</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-3">
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-3">Olhada rápida</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-4">
+                          <ion-icon name="repeat-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-4">Comparar</div>
+                      </li>
+
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Protetor</a> /
+                      <a href="#" class="card-cat-link">Masculino</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Helmet Schutt F7</a>
+                    </h3>
+
+                    <data class="card-price" value="3.999,90">R$3.999,90</data>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/images/calca_seven_pieces_traktor_349_1_20200901172349.webp" width="312" height="350" loading="lazy"
+                      alt="Air Jordan 7 Retro " class="image-contain">
+
+                    <div class="card-badge"> -25%</div>
+
+                    <ul class="card-action-list">
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-1">
+                          <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-1">Adicionar ao carrinho</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-2">
+                          <ion-icon name="heart-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-2">Adicionar lista de Desejos</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-3">
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-3">Olhada rápida</div>
+                      </li>
+
+                      <li class="card-action-item">
+                        <button class="card-action-btn" aria-labelledby="card-label-4">
+                          <ion-icon name="repeat-outline"></ion-icon>
+                        </button>
+
+                        <div class="card-action-tooltip" id="card-label-4">Comparar</div>
+                      </li>
+
+                    </ul>
+                  </figure>
+
+                  <div class="card-content">
+
+                    <div class="card-cat">
+                      <a href="#" class="card-cat-link">Protetor </a> /
+                      <a href="#" class="card-cat-link">Masculino</a>
+                    </div>
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Calça Com 7 Pads </a>
+                    </h3>
+
+                    <data class="card-price" value="170.00">R$170.00 <del>$200.00</del></data>
+
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service">
+        <div class="container">
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-1.png" width="53" height="28" loading="lazy" alt="Service icon">
+                </div>
+
+                <div>
+                  <h3 class="h4 card-title">FRETE GRÁTIS</h3>
+
+                  <p class="card-text">
+                  Todos os pedidos acima de<span>$300</span>
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-2.png" width="43" height="35" loading="lazy" alt="Service icon">
+                </div>
+
+                <div>
+                  <h3 class="h4 card-title">PAGAMENTO RÁPIDO</h3>
+
+                  <p class="card-text">
+                    100% seguro
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-3.png" width="40" height="40" loading="lazy" alt="Service icon">
+                </div>
+
+                <div>
+                  <h3 class="h4 card-title">DEVOLUÇÕES GRATUITAS</h3>
+
+                  <p class="card-text">
+                    Dinheiro de volta em 30 dias
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-4.png" width="40" height="40" loading="lazy" alt="Service icon">
+                </div>
+
+                <div>
+                  <h3 class="h4 card-title">Suporte 24 HORAS</h3>
+
+                  <p class="card-text">
+                    Obtenha suporte rápido
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #INSTA POST
+      -->
+
+      <section class="section insta-post">
+
+        <ul class="insta-post-list has-scrollbar">
+
+          <li class="insta-post-item">
+            <img src="./assets/images/insta-1.jpg" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">
+
+            <a href="#" class="insta-post-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <img src="./assets/images/insta-2.jpg" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">
+
+            <a href="#" class="insta-post-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <img src="./assets/images/insta-3.jpg" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">
+
+            <a href="#" class="insta-post-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <img src="./assets/images/insta-4.jpg" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">
+
+            <a href="#" class="insta-post-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <img src="./assets/images/insta-5.jpg" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">
+
+            <a href="#" class="insta-post-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <img src="./assets/images/insta-6.jpg" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">
+
+            <a href="#" class="insta-post-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <img src="./assets/images/insta-7.jpg" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">
+
+            <a href="#" class="insta-post-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <img src="./assets/images/insta-8.jpg" width="100" height="100" loading="lazy" alt="Instagram post"
+              class="insta-post-banner image-contain">
+
+            <a href="#" class="insta-post-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="160" height="50" alt="Footcap logo">
+          </a>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Contato</p>
+            </li>
+
+            <li>
+              <address class="footer-link">
+                <ion-icon name="location"></ion-icon>
+
+                <span class="footer-link-text">
+                  R. Augusto Stresser, 1485 - Sobre Loja - Hugo Lange, Curitiba - PR, 80040-310
+                </span>
+              </address>
+            </li>
+
+            <li>
+              <a href="tel:+557343673257" class="footer-link">
+                <ion-icon name="call"></ion-icon>
+
+                <span class="footer-link-text">+55 41 99179-1186</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:footcap@help.com" class="footer-link">
+                <ion-icon name="mail"></ion-icon>
+
+                <span class="footer-link-text">NFLStore@help.com</span>
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Minha conta</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">Minha conta</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">ver Cartão</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">Lista de desejos</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">Comparar</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">Novos Produtos</span>
+              </a>
+            </li>
+
+          </ul>
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">Tempo de abertura</p>
+
+            <table class="footer-table">
+              <tbody>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Seg - Qui:</th>
+
+                  <td class="table-data">9:00 - 22:00</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Seg:</th>
+
+                  <td class="table-data">9:00 - 22:00</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Ter:</th>
+
+                  <td class="table-data">9:00 - 22:00</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Quar:</th>
+
+                  <td class="table-data">9:00 - 22:00</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Qui:</th>
+
+                  <td class="table-data">Fechado</td>
+                </tr>
+
+              </tbody>
+            </table>
+
+          </div>
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">Notícias</p>
+
+            <p class="newsletter-text">
+              
+            </p>
+
+            <form action="" class="newsletter-form">
+              <input type="email" name="email" required placeholder="Email" class="newsletter-input">
+
+              <button type="submit" class="btn btn-primary">Inscreva-se</button>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2022 <a href="#" class="copyright-link">Pedrao</a>. Direitos reservados
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top-btn" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
